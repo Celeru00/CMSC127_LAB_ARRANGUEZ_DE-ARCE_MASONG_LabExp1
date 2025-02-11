@@ -1,0 +1,164 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+#wrap {
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  displa/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Wrapper */
+#wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(134, 112, 155);
+    margin: 100px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+.heading, h1 {
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Name Section */
+#name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Subtext */
+.subtext {
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+}
+
+/* Layout Columns */
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}
+
+/* Layout Rows */
+.row {
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Contact Information */
+.contact_information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
