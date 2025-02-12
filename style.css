@@ -1,67 +1,106 @@
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    display:flex
-  }
+}
 
-  body {
+body {
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-  }
-  #wrap{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(134, 112, 155);
-    margin: 100px;
+    min-height: 100vh;
+    margin: 0;
     padding: 20px;
-    border-radius: 10px;
-  }
-  .heading{
-    color: rgb(255, 255, 255);
+}
+
+/* Main Wrapper */
+#wrap {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    gap: 20px;
+}
+
+/* Headings */
+.heading {
     text-align: center;
-    background-color: blueviolet;
-  }
- h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background-color: blueviolet;
-  }
-  h4 {
-    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
-  }
-  #name
-    {
-        flex-direction: row;
-        align-items: center;
-        background-color: aqua;
 }
-.subtext{
-    font-size: 12px;
-    color: rgb(142, 142, 142);
-}
-.col {
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack items vertically */
-    width: 200px;
-    margin: 10px;
-}
-.row{
-    display: flex; /* Enable flexbox */
-    flex-direction: row; /* Stack items vertically */
-    background-color: brown;
-}
+
+/* Contact Information */
 .contact_information {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
