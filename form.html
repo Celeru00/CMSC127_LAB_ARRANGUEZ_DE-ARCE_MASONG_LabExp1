@@ -134,8 +134,46 @@
         <label><input type="checkbox" name="transportation" value="Boat"> Boat</label>
         <label><input type="checkbox" name="transportation" value="Motorcycle"> Motorcycle</label>
     </div>
-    <div>
-        
+    <div class="companion">
+        <p>14. Who usually accompanies you on vacation?</p>
+        <label><input type="checkbox" name="companion" value="I travel alone"> I travel alone</label>
+        <label><input type="checkbox" name="companion" value="Spouse"> Spouse</label>
+        <label><input type="checkbox" name="companion" value="Children"> Children</label>
+        <label><input type="checkbox" name="companion" value="Spouse and children"> Spouse and children</label>
+        <label><input type="checkbox" name="companion" value="Friends"> Friends</label>
+        <label><input type="checkbox" name="companion" value="Family members"> Family members</label>
+        <label><input type="checkbox" name="companion" value="Other"> Other</label>
+        <input type="text" id="other_companion" placeholder="Please specify">
+    </div>
+    <div class="D/I">
+        <p>15. Do you mostly travel to domestic or international areas?</p>
+        <label><input type="checkbox" name="travel_area" value="Domestic"> Domestic</label>
+        <label><input type="checkbox" name="travel_area" value="International"> International</label>
+        <label><input type="checkbox" name="travel_area" value="Both"> Both</label>
+    </div>
+    <div class="guide">
+        <p>16. Do you use a guidebook for traveling purposes? Which one do you use most often?</p>
+        <label><input type="checkbox" name="guidebook" value="Do not use a travel guide book"> Do not use a travel guide book</label>
+        <label><input type="checkbox" name="guidebook" value="Lonely Planet"> Lonely Planet</label>
+        <label><input type="checkbox" name="guidebook" value="Bradt"> Bradt</label>
+        <label><input type="checkbox" name="guidebook" value="Rough Guide"> Rough Guide</label>
+        <label><input type="checkbox" name="guidebook" value="Frommers"> Frommers</label>
+        <label><input type="checkbox" name="guidebook" value="Time Out"> Time Out</label>
+        <label><input type="checkbox" name="guidebook" value="Frodors"> Frodors</label>
+        <label><input type="checkbox" name="guidebook" value="Eyewitness"> Eyewitness</label>
+        <label><input type="checkbox" name="guidebook" value="Let’s Go"> Let’s Go</label>
+        <label><input type="checkbox" name="guidebook" value="Other"> Other</label>
+        <input type="text" id="other_guidebook" placeholder="Please specify">
+    </div>
+    <div class="longest-trip">
+        <p>17. What is the longest trip you have been on?</p>
+        <label><input type="radio" name="longest_trip" value="Less than 2 weeks" onchange="longest_trip = this.value"> Less than 2 weeks</label>
+        <label><input type="radio" name="longest_trip" value="2 – 4 weeks" onchange="longest_trip = this.value"> 2 – 4 weeks</label>
+        <label><input type="radio" name="longest_trip" value="1 – 4 months" onchange="longest_trip = this.value"> 1 – 4 months</label>
+        <label><input type="radio" name="longest_trip" value="4 – 6 months" onchange="longest_trip = this.value"> 4 – 6 months</label>
+        <label><input type="radio" name="longest_trip" value="6 – 9 months" onchange="longest_trip = this.value"> 6 – 9 months</label>
+        <label><input type="radio" name="longest_trip" value="9 months to one year" onchange="longest_trip = this.value"> 9 months to one year</label>
+        <label><input type="radio" name="longest_trip" value="More than one year" onchange="longest_trip = this.value"> More than one year</label>
     </div>
   </body>
 </html>
