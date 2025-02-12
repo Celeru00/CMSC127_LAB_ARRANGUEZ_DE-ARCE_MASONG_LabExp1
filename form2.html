@@ -5,6 +5,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style2.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function toggleInput(radioName, inputId) {
+            const radios = document.getElementsByName(radioName);
+            const input = document.getElementById(inputId);
+            input.disabled = true;
+            
+            radios.forEach(radio => {
+                radio.addEventListener("change", function () {
+                    if (this.value === "Other") {
+                        input.disabled = false;
+                        input.focus();
+                    } else {
+                        input.disabled = true;
+                        input.value = "";
+                    }
+                });
+            });
+        }
+
+        toggleInput("region", "other_region");
+        toggleInput("interest", "other_interest");
+        toggleInput("companion", "other_companion");
+        toggleInput("guidebook", "other_guidebook");
+      });
+    </script>
   </head>
   <body>
     <div id="wrap">
@@ -12,11 +38,11 @@
         <h1><b>Travel Survey Questionnaire</b></h1>
         <h4>
           Please complete the following questionnaire as accurately as possible
-          and then return to <br> [XYZ Travel Agency]
+          and then return to <br>[XYZ Travel Agency]
         </h4>
       </div>
       <div class="contact_information">
-          <p>1. Contact Information</p>
+          <p>Contact Information</p>
           <div class="col">
             <label for="fname" class="subtext">First Name </label>
             <input type="text" style="flex-grow: 25;" id="fname" placeholder="Juan" required>
