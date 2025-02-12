@@ -51,10 +51,24 @@
     </div>
     <div class="seasonplan">
         <p>4. What time of the year do you normally prefer to travel</p>
-        <label><input type="radio" name="seasons" value="1-3 months" onchange="seasons = this.value"> Spring</label>
-        <label><input type="radio" name="seasons" value="3-6 months" onchange="seasons = this.value"> Summer</label>
-        <label><input type="radio" name="seasons" value="6-12 months" onchange="seasons = this.value"> Fall</label>
-        <label><input type="radio" name="seasons" value="more than a year" onchange="seasons = this.value"> Winter</label>
+        <label><input type="radio" name="seasons" value="Spring" onchange="seasons = this.value"> Spring</label>
+        <label><input type="radio" name="seasons" value="Summer" onchange="seasons = this.value"> Summer</label>
+        <label><input type="radio" name="seasons" value="Fall" onchange="seasons = this.value"> Fall</label>
+        <label><input type="radio" name="seasons" value="Winter" onchange="seasons = this.value"> Winter</label>
+    </div>
+    <div class="regions">
+        <p>5. What region of the world is your most favorite place to travel</p>
+        <label><input type="radio" name="region" value="North America" onchange="region = this.value"> North America</label>
+        <label><input type="radio" name="region" value="Central America" onchange="region = this.value"> Central America</label>
+        <label><input type="radio" name="region" value="South America" onchange="region = this.value"> South America</label>
+        <label><input type="radio" name="region" value="Africa" onchange="region = this.value"> Africa</label>
+        <label><input type="radio" name="region" value="Europe" onchange="region = this.value"> Europe</label>
+        <label><input type="radio" name="region" value="Middle East" onchange="region = this.value"> Middle East</label>
+        <label><input type="radio" name="region" value="Asia" onchange="region = this.value"> Asia</label>
+        <label><input type="radio" name="region" value="Pacific" onchange="region = this.value"> Pacific</label>
+        <label><input type="radio" name="region" value="Orient" onchange="region = this.value"> Orient</label>
+        <label><input type="radio" name="region" value="Other" onchange="region = this.value"> Other</label>
+        <input type="text" id="other_region" placeholder="Please specify" onchange="region = this.value">
     </div>
   </body>
 </html>
